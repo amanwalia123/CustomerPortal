@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="524.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.101" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Application.BookTable">
+   <children>
+      <TableView fx:id="BookTable" layoutX="37.0" layoutY="90.0" prefHeight="130.0" prefWidth="530.0">
+        <columns>
+          <TableColumn fx:id="bookTitle" prefWidth="205.0" text="Title" />
+          <TableColumn fx:id="bookYear" prefWidth="67.0" text="Year" />
+            <TableColumn fx:id="bookCategory" prefWidth="94.0" text="Category" />
+            <TableColumn fx:id="bookLanguage" prefWidth="95.0" text="Language" />
+            <TableColumn fx:id="bookWeight" prefWidth="68.0" text="Weight" />
+        </columns>
+      </TableView>
+      <Label layoutX="196.0" layoutY="43.0" prefHeight="21.0" prefWidth="212.0" text="BOOK INFOPRMATION" AnchorPane.leftAnchor="196.0" AnchorPane.rightAnchor="192.0">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+      </Label>
+      <Label layoutX="37.0" layoutY="244.0" text="Choose a Book from Table Above">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label fx:id="textMinPrice" layoutX="258.0" layoutY="285.0" text="MInimum Price for Book" textFill="#0c8310" visible="false">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+      </Label>
+      <Label fx:id="minPrice" alignment="CENTER" layoutX="503.0" layoutY="279.0" prefHeight="32.0" prefWidth="66.0">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+      </Label>
+      <Label fx:id="signMul" alignment="CENTER" layoutX="532.0" layoutY="311.0" text="X" textFill="#0c8310" visible="false">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+      </Label>
+      <Label fx:id="quanText" layoutX="347.0" layoutY="345.0" text="Enter Quantity" textFill="#0c8310" visible="false">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+      </Label>
+      <TextField fx:id="quantity" alignment="CENTER" layoutX="501.0" layoutY="339.0" onInputMethodTextChanged="#getTotalPrice" onKeyPressed="#getTotalPrice" onKeyReleased="#getTotalPrice" onKeyTyped="#getTotalPrice" prefHeight="25.0" prefWidth="77.0" visible="false">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+      </TextField>
+      <Label fx:id="textInvQuantity" alignment="CENTER" layoutX="486.0" layoutY="372.0" prefHeight="16.0" prefWidth="107.0" text="Invalid Quantity" textFill="#da0707" visible="false" />
+      <Label fx:id="textTotal" layoutX="400.0" layoutY="410.0" text="Total" textFill="#0c8310" visible="false">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+      </Label>
+      <Label fx:id="total" alignment="CENTER" layoutX="455.0" layoutY="410.0" prefHeight="20.0" prefWidth="137.0">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+      </Label>
+      <Button fx:id="purchButton" layoutX="243.0" layoutY="450.0" mnemonicParsing="false" onAction="#makePurchase" prefHeight="33.0" prefWidth="172.0" style="-fx-background-color: #6AE21A;" text="Make Purchase" visible="false">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+      </Button>
+      <Label fx:id="textPurchaseSucc" layoutX="223.0" layoutY="489.0" prefHeight="24.0" prefWidth="212.0" text="Purchase Succesful" textFill="#069018" visible="false">
+         <font>
+            <Font name="System Bold" size="19.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
