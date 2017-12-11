@@ -9,7 +9,7 @@ Create tables using [yrb_create](yrb_create) file in DB2.You need to have instal
 ### Installing
 Download this project to your machine.
 Move to the folder using
-``
+```
 cd CustomerPortal
 ```
 Compile it using
@@ -20,7 +20,7 @@ Run it using
 ```
 java Application.Main
 ```
-### Woring
+### Working
 Refer to [Documentation](Report.pdf) to see how it works.
 ## Authors
 * **Amanpreet Walia** 
