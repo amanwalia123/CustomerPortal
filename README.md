@@ -13,7 +13,7 @@ Move to the folder using
 cd CustomerPortal
 ```
 Compile it using
-``
+```
 javac Application/*.java
 ```
 Run it using
